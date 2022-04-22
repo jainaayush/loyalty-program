@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Invoices</h1>
+
+<div class="row">
+  <div id="invoices">
+    <% if @invoices.present? %>
+      <%= render 'list', invoices: @invoices %>
+    <% else %>
+      <h4> There is no previous invoices available.</h4>
+    <% end %>
+  </div>
+
+</div>
+<div >
+  <%= link_to "New invoice", new_invoice_path, class: "btn btn-primary" %>
+</div>

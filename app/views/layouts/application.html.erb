@@ -10,7 +10,11 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="container">
+    <div class="sign-out" style="float: right;">
+        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+    </div>
+
     <%= yield %>
   </body>
 </html>

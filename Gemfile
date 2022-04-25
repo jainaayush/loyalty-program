@@ -29,11 +29,14 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.4', require: false
 # User authentication
 gem 'devise'
+# Styles, UI/UX
 gem 'bootstrap', '~> 5.1.3'
 gem 'jquery-rails'
 # Code analysis tools
 gem 'rubocop', '~> 1.2.0'
 gem 'rails_best_practices', '~> 1.20.0'
+# Simple, efficient background processing.
+gem 'sidekiq'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

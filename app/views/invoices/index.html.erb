@@ -10,8 +10,13 @@
       <h4> There is no previous invoices available.</h4>
     <% end %>
   </div>
-
 </div>
-<div >
+<div class="mb-4">
   <%= link_to "New invoice", new_invoice_path, class: "btn btn-primary" %>
+</div>
+<div class="loyalty-points  bg-light bg-gradient p-4">
+  <div class="text-uppercase fw-bold">
+    Total Earned Points: 
+    <span class="text-success"><%= user_loyalty_points %></span>
+  </div>
 </div>

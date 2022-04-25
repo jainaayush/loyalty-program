@@ -11,9 +11,16 @@
   </head>
 
   <body class="container">
-    <div class="sign-out" style="float: right;">
-        <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-    </div>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid" style="float: right;">
+        <div class="home">
+          <%= link_to "Home", root_path %>
+        </div>
+        <div class="sign-out nav-nav ms-auto">
+          <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+        </div>
+      </div>
+    </nav>
 
     <%= yield %>
   </body>

@@ -3,8 +3,7 @@ class LoyaltyReward < ApplicationRecord
     "Free Coffee",
     "5\% Cash Rebate",
     "Movie Tickets",
-    "4x Airport Lounge Access",
-    "100 bonus points"
+    "4x Airport Lounge Access"
   ].freeze
 
   validates :reward_type, inclusion: { in: REWARD_TYPE }
@@ -27,10 +26,6 @@ class LoyaltyReward < ApplicationRecord
 
     def airport_lounge_access
       @airport_lounge_access ||= find_by(reward_type: "4x Airport Lounge Access")
-    end
-
-    def bonus_points
-      @movie_ticket ||= find_by(reward_type: "100 bonus points")
     end
   end
 end

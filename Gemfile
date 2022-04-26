@@ -37,6 +37,8 @@ gem 'rubocop', '~> 1.2.0'
 gem 'rails_best_practices', '~> 1.20.0'
 # Simple, efficient background processing.
 gem 'sidekiq'
+# Sidekiq workers to schedule jobs at specified times
+gem "sidekiq-cron"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

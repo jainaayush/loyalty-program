@@ -13,7 +13,7 @@
         <th scope="row"><%= invoice.id %></th>
         <td><%= invoice.invoice_date.strftime('%B %e, %Y') %></td>
         <td><%= number_to_currency(invoice.amount) %></td>
-        <td><%= invoice.foreign_country_investment %></td>
+        <td><%= invoice.foreign_country_investment ? 'Yes' : 'No' %></td>
       </tr>
     <% end %>
   </tbody>

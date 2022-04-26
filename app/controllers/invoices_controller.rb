@@ -2,6 +2,7 @@ class InvoicesController < ApplicationController
   # GET /invoices or /invoices.json
   def index
     @invoices = current_user.invoices
+    @rewards = current_user.loyalty_rewards
   end
 
   # GET /invoices/new
